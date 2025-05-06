@@ -1,0 +1,502 @@
+/* <-------COMMON------> */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  overflow-x: hidden;
+}
+
+nav {
+  color: white;
+  padding: 1.5rem 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+nav h1 {
+  margin: 0;
+  color: black;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 145px 120px;
+  padding-right: 1000px;
+  background-color: white;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.hero h2 {
+  font-size: 2.35rem;
+  font-weight: bold;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.hero h2 span {
+  color: #E53E3E;
+}
+
+.hero p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 20px 0;
+  color: #4A5568;
+}
+
+button {
+  padding: 12px 30px;
+  line-height: 1.5rem;
+  font-size: 1rem;
+  color: white;
+  background-color: rgb(233, 120, 98);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: rgb(211, 103, 81);
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: rgb(27,33,36);
+  color: white;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+/* <-------HOME PAGE------> */
+
+/* =======COURSE CATEGORIES======= */
+.course-categories {
+  height: 70vh;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+  max-width: 1280px;
+  margin: 30px auto;
+  overflow: hidden;
+}
+
+.course-categories h2 {
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin-bottom: 0.3rem;
+}
+
+.course-categories p {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  color: #555;
+}
+
+.categories-list {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 1.9rem;
+}
+
+.category-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  padding: 0 1.8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 175px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.category-card:hover {
+  background: linear-gradient(to right, #e0f7fa, #fce4ec);
+  transform: scale(1.05);
+}
+
+.category-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+}
+
+.category-content h3 {
+  font-size: 1rem;
+  margin-bottom: 0.3rem;
+}
+
+.category-content p {
+  font-size: 0.85rem;
+  color: #666;
+  margin-bottom: 0.6rem;
+}
+
+.category-content img {
+  width: 50px;
+  height: 50px;
+}
+
+/* =======FEATURED COURSES SECTION======= */
+
+.featured-container {
+  background-color: rgb(247,250,251);
+  padding-bottom: 80px;
+}
+
+.featured-heading,
+.featured-subheading {
+  padding-left: 115px;
+  font-size: 20px;
+  padding-bottom: 5px;
+}
+
+.featured-heading {
+  padding-top: 60px;
+  font-size: 32px;
+}
+
+.featured-subheading {
+  color: #E97862;
+  font-size: 24px;
+}
+
+.featured-courses {
+  padding: 40px 120px;
+  background-color: white;
+}
+
+.course-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 20px;
+  padding: 0 115px;
+  padding-bottom: 40px;
+}
+
+.courses-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.courses-subtitle {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+/* ========== FEATURED >> COURSE CARD ========== */
+
+.course-card {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  border: 1px solid white;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.image-container {
+  position: relative;
+}
+
+.course-image {
+  width: 100%;
+  height: 100%;
+}
+
+.course-content {
+  padding: 20px;
+}
+
+.course-label {
+  background: linear-gradient(to right, #c6f6d5, #e9d8fd);
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 8px;
+  border-radius: 6px;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.course-title {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 6px 0;
+}
+
+.course-description {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.course-note {
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.course-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.btn {
+  flex: 1;
+  padding: 10px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.btn.outline {
+  background: white;
+  color: rgb(229,132,113);
+  border: 1px solid rgb(229,132,113);
+}
+
+.btn.fill {
+  background-color: rgb(229,132,113);
+  color: white;
+  border: none;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+/* ========== TESTIMONIAL SECTION ========== */
+
+.testimonial-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.testimonial {
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 8px;
+  width: 80%;
+  text-align: center;
+}
+
+/* ========== FAQ SECTION ========== */
+
+.faqs {
+  padding: 30px 120px;
+  background-color: #f7f9fb;
+  border-radius: 10px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+  margin: 30px auto;
+}
+
+.faqs h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #2d3748;
+}
+
+.faq {
+  border-bottom: 1px solid #e2e8f0;
+  padding: 15px 0;
+  transition: background 0.3s;
+}
+
+.faq:hover {
+  background-color: #edf2f7;
+}
+
+.faq-question {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #4a5568;
+  margin: 0;
+}
+
+.faq-answer {
+  font-size: 1rem;
+  color: #606f7b;
+  margin: 8px 0 0;
+}
+/* <------LOGIN PAGE------> */
+
+.login-container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  font-family: 'Arial', sans-serif;
+}
+
+.login-left {
+  flex: 1.5;
+  background-color: #f5f5f5;
+}
+
+.login-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.login-right {
+  flex: 0.75;
+  padding: 60px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: #ffffff;
+  box-shadow: -2px 0 8px rgba(0, 0, 0, 0.05);
+}
+
+.login-right .logo {
+  width: 150px;
+  margin-bottom: 40px;
+}
+
+.login-right h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.login-right p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.phone {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 10px;
+  margin-bottom: 20px;
+  background-color: #f9f9f9;
+}
+
+.country-code {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  font-weight: bold;
+  font-size: 14px;
+  color: #333;
+}
+
+.country-code-select {
+  padding: 4px;
+  border-radius: 4px;
+  border: none;
+  background-color: #f9f9f9;
+}
+
+.country-code-select:focus {
+  outline: none;
+}
+
+.country-code-select:hover {
+  cursor: pointer;
+}
+
+.phone input {
+  border: none;
+  outline: none;
+  flex: 1;
+  font-size: 14px;
+  background: transparent;
+}
+
+.send-otp {
+  width: 100%;
+  padding: 12px;
+  font-size: 14px;
+  font-weight: 600;
+  color: white;
+  background-color: #e97862;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.send-otp:hover {
+  background-color: #d45f4c;
+}
+
+.or-divider {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 12px;
+  color: #999;
+  position: relative;
+}
+
+.google-login {
+  width: 100%;
+  padding: 12px;
+  font-size: 14px;
+  font-weight: 600;
+  color: rgb(59, 58, 58);
+  background-color: white;
+  border: 1px solid rgb(207, 205, 205);
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: background 0.3s ease;
+}
+
+.google-login:hover {
+  background-color: #f6f6f6;
+}

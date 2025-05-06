@@ -1,0 +1,149 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9;
+  }
+  
+  /* Container with two sides */
+  .container {
+    display: flex;
+    height: 100vh;
+  }
+  
+  /* Left side with image */
+  .container::before {
+    content: "";
+    flex: 1;
+    background: url('/images/login-illustration.png') no-repeat center center;
+    background-size: contain;
+    background-color: #f7f8fa;
+  }
+  
+  /* Right form panel */
+  .form-container {
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+    padding: 40px 30px;
+    background-color: #fff;
+    box-shadow: -4px 0 12px rgba(0, 0, 0, 0.05);
+  }
+  
+  .form-container h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #111;
+  }
+  
+  /* Form styles */
+  .form-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .form-container input {
+    padding: 12px 14px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    background-color: transparent;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.3s;
+  }
+  
+  .form-container input:focus {
+    border-bottom-color: #f79489;
+  }
+  
+  /* Submit button */
+  .form-container button[type="submit"] {
+    background-color: #f79489;
+    border: none;
+    padding: 12px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: 10px;
+    transition: background 0.3s;
+  }
+  
+  .form-container button[type="submit"]:hover {
+    background-color: #e77a70;
+  }
+  
+  /* Divider with "or" */
+  .divider {
+    text-align: center;
+    margin: 20px 0;
+    position: relative;
+  }
+  
+  .divider::before,
+  .divider::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 40%;
+    height: 1px;
+    background: #ccc;
+  }
+  
+  .divider::before {
+    left: 0;
+  }
+  
+  .divider::after {
+    right: 0;
+  }
+  
+  .divider span {
+    background: white;
+    padding: 0 10px;
+    color: #666;
+    font-size: 13px;
+  }
+  
+  /* Google sign-in button */
+  .google-button {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    border-radius: 4px;
+    transition: background 0.3s;
+  }
+  
+  .google-button:hover {
+    background-color: #f2f2f2;
+  }
+  
+  /* Toggle login/register */
+  .form-container p {
+    font-size: 13px;
+    color: #444;
+    text-align: center;
+    margin-top: 15px;
+  }
+  
+  .toggle-link {
+    color: #f79489;
+    cursor: pointer;
+    font-weight: 600;
+  }
+  
