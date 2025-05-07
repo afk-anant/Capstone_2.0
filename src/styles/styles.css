@@ -292,13 +292,13 @@ footer {
   transition: all 0.3s ease;
 }
 
-.btn.outline {
+.btn-explore{
   background: white;
   color: rgb(229,132,113);
   border: 1px solid rgb(229,132,113);
 }
 
-.btn.fill {
+.btn-buy {
   background-color: rgb(229,132,113);
   color: white;
   border: none;

@@ -13,8 +13,8 @@ const CourseCard = ({ course }) => {
         <p className="course-description">{course.description}</p>
         <p className="course-note">{course.note}</p>
         <div className="course-buttons">
-          <button className="btn outline">Explore</button>
-          <button className="btn fill">Buy Now</button>
+          <button className="btn btn-explore">Explore</button>
+          <button className="btn btn-buy">Buy Now</button>
         </div>
       </div>
     </div>
