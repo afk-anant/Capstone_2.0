@@ -308,22 +308,6 @@ footer {
   opacity: 0.9;
 }
 
-/* ========== TESTIMONIAL SECTION ========== */
-
-.testimonial-list {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.testimonial {
-  border: 1px solid #ddd;
-  padding: 15px;
-  margin: 10px;
-  border-radius: 8px;
-  width: 80%;
-  text-align: center;
-}
 
 /* ========== FAQ SECTION ========== */
 
@@ -391,8 +375,7 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  background-color: #ffffff;
-  box-shadow: -2px 0 8px rgba(0, 0, 0, 0.05);
+  background-color: white;
 }
 
 .login-right .logo {
@@ -476,8 +459,7 @@ footer {
   text-align: center;
   margin: 20px 0;
   font-size: 12px;
-  color: #999;
-  position: relative;
+  color: grey;
 }
 
 .google-login {

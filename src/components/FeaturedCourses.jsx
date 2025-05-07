@@ -1,6 +1,5 @@
 import React from 'react';
 import CourseCard from './CourseCard';
-import '../styles/styles.css';
 
 const FeaturedCourses = () => {
   const Course1 = [
